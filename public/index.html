@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app ng-controller="MyCtrl">
+    <div class="row">
+      <div class="span12">
+        <h1>{{myVariable}}</h1>
+        <input type='text' ng-model="myVariable"/>
+        <input type='submit' value="click me" ng-click="doMagic()" />
+
+        <p style="display:none" ng-show="showHidden">
+        This is hidden.
+        </p>
+        
+        <ul>
+          <li ng-repeat="item in items">{{item.name}} {{item.rating}}</li>
+        </ul>
+
+      </div>
+    </div>
+  </body>
+</html>
