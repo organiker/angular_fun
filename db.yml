@@ -1,0 +1,7 @@
+- name: Banana
+  rating: 3
+- name: Vanilla
+  rating: 5
+- name: Strawberry
+  rating: 8
+
